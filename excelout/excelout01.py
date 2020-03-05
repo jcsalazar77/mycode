@@ -5,7 +5,9 @@ import pyexcel
 def get_ip_data():
     input_ip = input("\nWhat is the IP address? ")
     input_driver = input("What is the driver associated with this device? ")
-    d = {"IP": input_ip, "driver": input_driver}
+    input_device = input("What is the device type? ")
+    input_mfg = input("Who is the Mfg.? ")
+    d = {"IP": input_ip, "driver": input_driver, "device type": input_device, "Mfg.": input_mfg}
     return d
 
 # Runtime
